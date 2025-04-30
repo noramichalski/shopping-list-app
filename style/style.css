@@ -1,0 +1,100 @@
+body,
+h2,
+input,
+button,
+li {
+  font-size: 24px;
+}
+
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 0;
+  margin: 0;
+  background: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+h2 {
+  margin: 0 0 12px;
+}
+
+/* input and button row */
+.input-row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/* input field */
+.input-row input[type="text"] {
+  flex: 1;
+  padding: 2px 0;
+  border: 2px solid black;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  box-sizing: border-box;
+}
+
+/* add button */
+button.add {
+  width: 90px;
+  background-color: skyblue;
+  color: black;
+  border: 2px solid black;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+/* line below input section */
+hr {
+  border: none;
+  border-top: 2px solid darkgray;
+  margin: 0 0 20px 0;
+}
+
+/* list */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: whitesmoke;
+  padding: 6px 4px 6px 12px;
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+}
+
+/* completed item */
+li.completed span {
+  text-decoration: line-through;
+}
+
+/* delete button */
+button.delete {
+  background-color: none;
+  border: 2px solid tomato;
+  color: tomato;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* hover effect on list item */
+li:hover,
+li:hover > button.delete {
+  background-color: lightgray;
+}
